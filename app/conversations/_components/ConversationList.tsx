@@ -14,7 +14,7 @@ import { pusherClient } from "@/libs/pusher";
 import { find } from "lodash";
 interface ConversationsListProps {
   initialItems: FullConversationType[];
-  users: User[];
+  users: User[] | any;
 }
 
 const ConversationList = ({ initialItems, users }: ConversationsListProps) => {
